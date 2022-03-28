@@ -6,9 +6,13 @@ const UseStateArray = () => {
   const [books, setBooks] = useState(data);
 
   // using Array.filter function
+  // using functional approach - better used in the counter
   const removeItem = (id) => {
-    let newBooks = books.filter((book) => book.id !== id);
-    setBooks(newBooks);
+
+    setBooks((oldBooks) => {
+      let newBooks = oldBooks.filter((book) => book.id !== id);
+      return newBooks
+    });
   }
 
   return (
