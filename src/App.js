@@ -1,10 +1,10 @@
 import React from "react"
-import Setup from "./topics/1-useState/4-useState-counter"
+import Setup from "./topics/2-useEffect/3-useEffect-fetch-data"
 
 function App() {
   return (
     <div className="container">
-      <h2>React.js Advanced</h2>
+      <h3>React.js Advanced</h3>
       <Setup />
     </div>
   );
